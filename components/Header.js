@@ -7,7 +7,7 @@ import 'react-date-range/dist/theme/default.css';
 import { DateRange, DateRangePicker } from 'react-date-range';
 
 
-function Header() {
+function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState('');
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -64,7 +64,7 @@ function Header() {
       {/* center search bar*/}
       <div className='flex items-center md:border-2 rounded-full py-2 md:shadow-md'>
         <input 
-          className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' type='text' placeholder='Start your search'
+          className='flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400' type='text' placeholder={placeholder || 'Start your search'}
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
