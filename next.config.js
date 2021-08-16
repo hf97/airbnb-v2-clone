@@ -5,6 +5,6 @@ module.exports = {
     // public key only
     // key deprecated display purposes only
     env: {
-        mapbox_key: 'pk.eyJ1IjoiaGY5NyIsImEiOiJja3M5NjlncDYwbmkzMm9rMXVieWw4bnlhIn0.UZHg0-t7GFhne15hDACeGA',
+        mapbox_key: 'key',
     }
 }
